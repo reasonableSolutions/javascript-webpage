@@ -1,0 +1,66 @@
+/* In CSS, a comment looks like this. I will use comments to explain this CSS document. */
+
+/* This will automatically apply the listed CSS properties to all "body" elements. */
+body
+{margin:0px;
+background:url(images/pentium_back.jpg) top center;
+height:100%}
+
+/* Likewise, this will apply the "height" property to all "html" elements. */
+html {height:100%}
+
+/* Notice the . in front of the name "wrapper", and that there's no html tag named "wrapper". */
+/* This is a class - we give this group of attributes the name "wrapper", and then we can apply this class to an element by giving that element the attribute of "class=wrapper". */
+/* Look for it in the html file to see how it's used. */
+.wrapper
+{width:900px;
+margin:auto;
+overflow:auto;
+min-height:100%;
+background-color:lightgrey}
+
+.header {height:80px}
+
+/* Here I have a group of attributes that will be applied to all h1 elements which are inside a block-level element (such as a div) of the "header" class. */
+/* Contrast this to ".main h1" a few lines down, which will apply to h1 elements inside the "main" part of my webpage. */
+.header h1
+{margin:0px;
+font-family:helvetica;
+font-size:40px;
+color: blue;
+text-align:center}
+
+/* Notice the # in front of the name "unboldedheader". This is not a class, but an "id". */
+/* An id can only be applied to one element in a webpage - it is unique. */
+/* It is used to set apart one particular element which you may want to look different from other elements of the same type in the same space. */
+/* For instance, if you have a whole bunch of text, and you want one particular sentence to appear in italics and in a different color, you should use an id for this. */
+/* In this case, an id wasn't really necessary but I used one to demonstrate how to use it. */
+#unboldedheader {font-weight:normal}
+
+.main
+{width:700px;
+float:left}
+
+.main h1
+{margin-top:0px;
+margin-bottom:36px;
+text-align:center}
+
+/* Note the html tag "img" before the class ".center". When you do this, it means that class can only be applied to that type of html element. */
+/* So this "center" class can only be used on images. */
+img.center
+{display:block;
+margin-left:auto;
+margin-right:auto}
+
+/* Note the "p.center" and "h1.center". This defines the "center" class for both the p and h1 elements. */
+/* My "center" class for these is different from my "center" class for images, because different methods are used to center text and images. */
+p.center, h1.center {text-align:center}
+
+p.caption
+{font-style:italic;
+text-align:center}
+
+.textbox
+{width:200px;
+float:right}

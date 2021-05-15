@@ -1,0 +1,37 @@
+header {
+height:120px;
+border-style:solid;
+text-align:center;
+margin-bottom:10px;
+}
+
+section {
+border-style:solid;
+width:65%;
+float:left;
+height:600px;
+}
+
+.lorem {
+color:red;
+font-style:italic;
+font-family:garamond;
+font-size:large;
+}
+
+aside {
+border-style:solid;
+width:33%;
+float:right;
+height:600px;
+}
+
+ul {
+  list-style-type: none;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  border:solid 1px;
+}
+
+	
